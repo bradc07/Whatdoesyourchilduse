@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# What Does Your Child Use?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive guide helping parents understand the apps, games, and devices their children use. Get personalised safety guidance, parental control instructions, and conversation starters.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visit: **https://bradc07.github.io/Whatdoesyourchilduse/**
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **20+ Platforms Covered**: TikTok, Instagram, Snapchat, YouTube, Discord, Roblox, Minecraft, Fortnite, and many more
+- **Detailed Guidance**: Age ratings, risk levels, and comprehensive information for each platform
+- **Parental Controls**: Step-by-step setup instructions for each platform's safety features
+- **Conversation Starters**: Non-judgmental questions to discuss digital safety with your child
+- **Warning Signs**: What to watch for that might indicate problems
+- **Personalised Dashboard**: Select what your child uses and get a tailored safety guide
+- **Print-Friendly**: Save or print your personalised guide for offline reference
 
-## Expanding the ESLint configuration
+## Categories
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Social Media (TikTok, Instagram, Snapchat, BeReal, Pinterest)
+- Games (Roblox, Minecraft, Fortnite, Call of Duty, FIFA/EA FC)
+- Streaming (YouTube, Twitch, Netflix, Spotify)
+- Messaging (Discord, WhatsApp)
+- Devices (iPhone/iPad, Android, PlayStation, Xbox, Nintendo Switch)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## For Developers
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Running Locally
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Clone the repository
+git clone https://github.com/bradc07/Whatdoesyourchilduse.git
+cd Whatdoesyourchilduse
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Building for Production
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+### Tech Stack
+
+- React 18 + TypeScript
+- Vite
+- CSS (no external UI libraries)
+
+## Contributing
+
+Contributions welcome! Ideas for improvement:
+- Add more platforms
+- Update parental control instructions as platforms change
+- Translate to other languages
+- Add more conversation starters
+
+## License
+
+MIT
