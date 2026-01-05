@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ['main']
+    branches: ['main', 'claude/development-assistance-5TpCK']
   workflow_dispatch:
 
 permissions:
